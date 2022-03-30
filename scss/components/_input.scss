@@ -1,0 +1,17 @@
+.input {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+
+  @include font(14, 16, 400, 0.01);
+  color: var(--color-primary);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+
+  border: none;
+  outline: none;
+
+  background-color: var(--color-white);
+}

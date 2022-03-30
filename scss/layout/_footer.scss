@@ -1,0 +1,100 @@
+.footer {
+  padding-top: 42px;
+  padding-bottom: 42px;
+
+  color: var(--color-white);
+  background-color: var(--color-fourth);
+}
+
+.footer__container {
+  @include flexAlign($align: flex-start, $justify: flex-start);
+}
+
+.footer__about {
+  width: 250px;
+  margin-right: 71px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+
+  @include font(11, 13, 400, 0.08);
+}
+
+.footer__logo {
+  margin-bottom: 15px;
+}
+
+.footer__text {
+  @include font(11, 19, 400, 0.08);
+}
+
+.footer-menu__wrapper {
+  @include flexAlign($align: flex-start, $justify: flex-start);
+
+  margin-right: 58px;
+}
+
+.footer-menu__list {
+  &:not(:last-child) {
+    margin-right: 34px;
+  }
+
+  flex-shrink: 0;
+}
+
+.footer-menu__item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.footer-menu__link {
+  display: block;
+
+  @include font(11, 12, 400, 0.08);
+
+  color: var(--color-white);
+
+  @include projTransitions(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
+
+.footer__contacts {
+  width: 120px;
+  // margin-right: auto;
+}
+
+.footer__address {
+  display: block;
+  @include font(11, 16, 400, 0.08);
+  margin-top: -3px;
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  display: inline-block;
+  @include font(11, 16, 400, 0.08);
+  color: var(--color-white);
+
+  @include projTransitions(color);
+
+  &--margin {
+    margin-bottom: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
+
+.footer__social {
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
