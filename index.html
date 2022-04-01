@@ -18,44 +18,67 @@
   </head>
   <body>
     <header class="header">
+      <button type="button" class="mobile-menu-btn" data-mobile-button>
+        <span class="mobile-menu-btn__item"></span>
+        <span class="mobile-menu-btn__item"></span>
+        <span class="mobile-menu-btn__item"></span>
+      </button>
       <div class="container">
-        <button type="button" class="mobile-menu-btn" data-mobile-button>
-          <span class="mobile-menu-btn__item"></span>
-          <span class="mobile-menu-btn__item"></span>
-          <span class="mobile-menu-btn__item"></span>
-        </button>
-        <div class="mobile-menu" data-mobile-menu>
-          <div class="mobile-menu__container">
-            <ul class="mobile-menu__list">
-              <li class="mobile-menu__item">
-                <a href="" class="mobile-menu__link active">Home</a>
-              </li>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="" class="navigation__link active">Home</a>
+            </li>
 
-              <li class="mobile-menu__item">
-                <a href="" class="mobile-menu__link">About me</a>
-              </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">About me</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Skills</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-              <li class="mobile-menu__item">
-                <a href="" class="mobile-menu__link">Skills</a>
-              </li>
+        <div class="mobile-menu-wrapper">
+          <div class="mobile-menu" data-mobile-menu>
+            <div class="mobile-menu__container">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link active">Home</a>
+                </li>
 
-              <li class="mobile-menu__item">
-                <a href="" class="mobile-menu__link">Portfolio</a>
-              </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">About me</a>
+                </li>
 
-              <li class="mobile-menu__item">
-                <a href="" class="mobile-menu__link">Contacts</a>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Skills</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Portfolio</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="mobile-menu__language language">
+              <li class="language__item">
+                <a href="" class="language__link">RU</a>
+              </li>
+              <li class="language__item">
+                <a href="" class="language__link active">ENG</a>
               </li>
             </ul>
           </div>
-          <ul class="mobile-menu__language language">
-            <li class="language__item">
-              <a href="" class="language__link">RU</a>
-            </li>
-            <li class="language__item">
-              <a href="" class="language__link active">ENG</a>
-            </li>
-          </ul>
         </div>
       </div>
     </header>
@@ -67,11 +90,18 @@
             Denis <br />
             Novik
           </h1>
-          <p class="text">
+          <p class="text hero__text">
             UX | UI designer <br />
             24 years old, Minsk
           </p>
-          <p class="text hero__language">RU | ENG</p>
+          <ul class="hero__language language">
+            <li class="language__item">
+              <a href="" class="language__link">RU</a>
+            </li>
+            <li class="language__item">
+              <a href="" class="language__link active">ENG</a>
+            </li>
+          </ul>
         </div>
         <div class="hero__thumb">
           <picture class="hero__image">

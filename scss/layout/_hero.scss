@@ -1,10 +1,23 @@
 .hero {
   padding-top: 65px;
+
+  @include tablet {
+    padding-top: 40px;
+  }
 }
 
 .hero__title {
   @include font(47, 58, 700, 0);
   margin-bottom: 23px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.hero__text {
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .hero__thumb {
@@ -16,4 +29,28 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hero__language {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    @include font(16, 20, 700, 0);
+    transform-origin: bottom left;
+    transform: rotateZ(-90deg) translateY(350%);
+    justify-self: flex-start;
+  }
+}
+
+.hero__wrapper {
+  // display: block;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 50px;
+  }
 }

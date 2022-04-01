@@ -1,5 +1,14 @@
+.navigation {
+  display: none;
+  border-bottom: 1px solid var(--color-links);
+
+  @include tablet{
+    display: block;
+  }
+}
+
 .navigation__list {
-  @include flexAlign();
+  @include flexAlign($justify: space-between);
 }
 
 .navigation__item {
@@ -10,22 +19,20 @@
 
 .navigation__link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 33px;
+  padding-bottom: 32px;
 
-  @include font(12, 14, 600, 0.02);
-
-  color: var(--color-primary);
+  @include font(18, 22, 700, 0);
 
   @include projTransitions(color);
 
   &:hover,
   &:focus {
-    color: var(--color-brand);
+    color: var(--color-accent);
   }
 
   &--active {
-      @include font(12, 14, 700, 0.02);
+    @include font(12, 14, 700, 0.02);
 
     color: var(--color-brand);
   }
