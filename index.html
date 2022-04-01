@@ -5,19 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Установка шрифтов -->
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+
     <!-- Нормалайзер из конспекта Саши Репеты -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/main.min.css" />
-    <title>Konstruct</title>
+    <title>My Portfolio</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="container">
+        <button type="button" class="mobile-menu-btn" data-mobile-button>
+          <span class="mobile-menu-btn__item"></span>
+          <span class="mobile-menu-btn__item"></span>
+          <span class="mobile-menu-btn__item"></span>
+        </button>
+        <div class="mobile-menu" data-mobile-menu>
+          <div class="mobile-menu__container">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link active">Home</a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">About me</a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Skills</a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Portfolio</a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="mobile-menu__language language">
+            <li class="language__item">
+              <a href="" class="language__link">RU</a>
+            </li>
+            <li class="language__item">
+              <a href="" class="language__link active">ENG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="section hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="title hero__title">
+            Denis <br />
+            Novik
+          </h1>
+          <p class="text">
+            UX | UI designer <br />
+            24 years old, Minsk
+          </p>
+          <p class="text hero__language">RU | ENG</p>
+        </div>
+        <div class="hero__thumb">
+          <picture class="hero__image">
+            <source
+              srcset="./img/hero-mob-317.jpg 400w, ./img/hero-mob-633.jpg 700w"
+              media="(max-width: 768px)"
+              sizes="(min-width: 501px) 900px, (min-width: 200px) 500px, 100vw"
+            />
+            <source
+              srcset="./img/hero-desk-945.jpg 1200w, ./img/hero-desk-1888.jpg 1888w"
+              media="(min-width: 769px)"
+              sizes="(min-width: 1301px) 3000px, (min-width: 769px) 1300px, 100vw"
+            />
+            <img src="./img/hero-univ.jpg" alt="My photo" />
+          </picture>
+        </div>
+      </div>
+    </section>
 
     <main class="main"></main>
 
     <footer class="footer"></footer>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

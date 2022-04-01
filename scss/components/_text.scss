@@ -1,13 +1,4 @@
 .text {
-  @include font(13, 23, 400, 0);
-
-  color: var(--color-primary);
-}
-
-.bold-text {
-  @include font(21, 31, 700, 0.03);
-
-  &--colored {
-    color: var(--color-brand);
-  }
+  @include font(18, 22, 400, 0);
+  margin-bottom: 37px;
 }

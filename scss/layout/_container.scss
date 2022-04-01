@@ -1,8 +1,10 @@
 .container {
-  width: 971px;
-  padding-left: 15px;
-  padding-right: 15px;
+  min-width: 375px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   margin-right: auto;
   margin-left: auto;
+
+  // position: relative;
 }

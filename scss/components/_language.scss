@@ -1,0 +1,15 @@
+.language {
+//   display: block;
+  @include flexAlign();
+
+  transform-origin: top right;
+  transform: rotateZ(90deg);
+
+  @include font(34, 42, 700, 0);
+}
+
+.language__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}

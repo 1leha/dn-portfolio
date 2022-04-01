@@ -1,57 +1,5 @@
 .header {
+  // padding-top: 30px;
+  // padding-bottom: 30px;
   position: relative;
-  max-width: 1920px;
-  height: 100vh;
-  // height: 769px;
-
-  padding-top: 41px;
-  padding-bottom: 71px;
-
-  text-align: center;
-
-  background-color: var(--color-fifth);
-  background-image: url('../../img/hero-bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @include pixelRatio() {
-    background-image: url('../../img/hero-bg@2x.jpg');
-  }
-}
-
-.header__logo {
-  margin-bottom: 318px;
-}
-
-.header__title-box {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header__title {
-  font-family: var(--secondary-font);
-  text-transform: uppercase;
-  @include font(60, 70, 700, 0.092);
-
-  color: var(--color-white);
-}
-
-.header__text {
-  // margin-bottom: calc(100% - 200px);
-  @include font(16, 19, 400, 0);
-
-  color: var(--color-white);
-
-  &--bottom {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -70px);
-    text-transform: uppercase;
-    @include font(16, 19, 400, 0);
-  }
 }

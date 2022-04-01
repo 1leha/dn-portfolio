@@ -1,6 +1,7 @@
 /* Глобальные стили страницы */
 body {
   font-family: var(--primary-font);
+  font-weight: 400;
 
   background-color: var(--color-white);
   color: var(--color-primary);
@@ -22,6 +23,7 @@ p {
 /* Обнуляет подчеркивание ссылок */
 a {
   text-decoration: none;
+  color: var(--color-links);
 }
 
 /* Обнуляет оформления списков */

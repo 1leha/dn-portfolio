@@ -1,24 +1,25 @@
 :root {
   /* Переменные основных цветов */
   --color-brand: #00a4e5;
-  --color-primary: #48555b;
+  --color-primary: #000000;
   --color-secondary: #e6e6e6;
   --color-third: #171819;
   --color-fourth: #141a20;
   --color-fifth: #bdbdbd;
 
   --color-white: #ffffff;
-  --color-black: #000000;
+  // --color-black: #000000;
   // --color-white40: rgba(255, 255, 255, 0.4);
 
   --color-bg: #e5e5e5;
 
   /* Переменные цветов активности */
-  --color-accent: #008bc2;
+  --color-accent: #000000;
+  --color-links: #828282;
 
   /* Шрифты */
-  --primary-font: 'Open Sans', sans-serif;
-  --secondary-font: 'Bebas Neue', cursive;
+  --primary-font: 'Gilroy', sans-serif;
+  // --secondary-font: 'Bebas Neue', cursive;
 
   /* ЭФФЕКТЫ */
   --transition-time: 250ms;
