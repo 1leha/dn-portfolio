@@ -7,14 +7,18 @@
 }
 
 .hero__title {
-  @include font(47, 58, 700, 0);
   margin-bottom: 23px;
+
+  @include font(47, 58, 700, 0);
+  text-align: left;
 
   @include tablet {
     margin-bottom: 0;
   }
 }
 .hero__text {
+  margin-bottom: 37px;
+
   @include tablet {
     margin-bottom: 0;
   }
@@ -39,7 +43,6 @@
     @include font(16, 20, 700, 0);
     transform-origin: bottom left;
     transform: rotateZ(-90deg) translateY(350%);
-    justify-self: flex-start;
   }
 }
 

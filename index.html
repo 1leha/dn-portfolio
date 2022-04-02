@@ -83,45 +83,246 @@
       </div>
     </header>
 
-    <section class="section hero">
-      <div class="container">
-        <div class="hero__wrapper">
-          <h1 class="title hero__title">
-            Denis <br />
-            Novik
-          </h1>
-          <p class="text hero__text">
-            UX | UI designer <br />
-            24 years old, Minsk
+    <main class="main">
+      <section class="section hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <h1 class="title hero__title">
+              Denis <br />
+              Novik
+            </h1>
+            <p class="text hero__text">
+              UX | UI designer <br />
+              24 years old, Minsk
+            </p>
+            <ul class="hero__language language">
+              <li class="language__item">
+                <a href="" class="language__link">RU</a>
+              </li>
+              <li class="language__item">
+                <a href="" class="language__link active">ENG</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__thumb">
+            <picture class="hero__image">
+              <source
+                srcset="./img/hero-mob-317.jpg 400w, ./img/hero-mob-633.jpg 700w"
+                media="(max-width: 768px)"
+                sizes="(min-width: 501px) 900px, (min-width: 200px) 500px, 100vw"
+              />
+              <source
+                srcset="./img/hero-desk-945.jpg 1200w, ./img/hero-desk-1888.jpg 1888w"
+                media="(min-width: 769px)"
+                sizes="(min-width: 1301px) 3000px, (min-width: 769px) 1300px, 100vw"
+              />
+              <img src="./img/hero-univ.jpg" alt="My photo" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--colored about-me">
+        <div class="container">
+          <h2 class="title about-me__title">About me</h2>
+
+          <p class="text about-me__text">
+            Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything
+            connected with it.
           </p>
-          <ul class="hero__language language">
-            <li class="language__item">
-              <a href="" class="language__link">RU</a>
+
+          <p class="text about-me__text">
+            I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+          </p>
+
+          <p class="text about-me__text">
+            Ready to implement excellent projects with wonderful people.
+          </p>
+        </div>
+      </section>
+
+      <section class="section skills">
+        <div class="container">
+          <h2 class="title skills__title">Skills</h2>
+          <p class="text skills__text">I work in such programs as</p>
+          <ul class="skills__list">
+            <li class="skills__item app">
+              <img
+                class="app__icon"
+                src="./img/ps-icon.svg"
+                alt="Photoshop icon"
+                width="89"
+                height="89"
+              />
+              <p class="app__name">Adobe <br />Photoshop</p>
+              <ul class="app__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+              </ul>
             </li>
-            <li class="language__item">
-              <a href="" class="language__link active">ENG</a>
+
+            <li class="skills__item app">
+              <img
+                class="app__icon"
+                src="./img/ai-icon.svg"
+                alt="Adobe Illustrator icon"
+                width="89"
+                height="89"
+              />
+              <p class="app__name">
+                Adobe <br />
+                Illustrator
+              </p>
+              <ul class="app__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+
+            <li class="skills__item app">
+              <img
+                class="app__icon"
+                src="./img/ae-icon.svg"
+                alt="Adobe After Effects icon"
+                width="89"
+                height="89"
+              />
+              <p class="app__name">
+                Adobe <br />
+                After Effects
+              </p>
+              <ul class="app__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+
+            <li class="skills__item app">
+              <img
+                class="app__icon"
+                src="./img/figma-icon.svg"
+                alt="Figma icon"
+                width="58"
+                height="89"
+              />
+              <p class="app__name">Figma</p>
+              <ul class="app__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--colored" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+
+                <li class="stars__item">
+                  <svg class="stars__icon" width="24" height="24">
+                    <use href="./img/icons.svg#star"></use>
+                  </svg>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
-        <div class="hero__thumb">
-          <picture class="hero__image">
-            <source
-              srcset="./img/hero-mob-317.jpg 400w, ./img/hero-mob-633.jpg 700w"
-              media="(max-width: 768px)"
-              sizes="(min-width: 501px) 900px, (min-width: 200px) 500px, 100vw"
-            />
-            <source
-              srcset="./img/hero-desk-945.jpg 1200w, ./img/hero-desk-1888.jpg 1888w"
-              media="(min-width: 769px)"
-              sizes="(min-width: 1301px) 3000px, (min-width: 769px) 1300px, 100vw"
-            />
-            <img src="./img/hero-univ.jpg" alt="My photo" />
-          </picture>
-        </div>
-      </div>
-    </section>
-
-    <main class="main"></main>
+      </section>
+    </main>
 
     <footer class="footer"></footer>
     <script src="./js/mob-menu.js"></script>
